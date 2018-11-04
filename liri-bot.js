@@ -4,9 +4,10 @@
  */
 //What the app requires, gathering the API Keys and placing them correctly
 require("dotenv").config();
-const rq = require("request");
-//Must also install request-promise so I can use .then and .catch when querying APIs using request
-//Not 100% nessessary but it makes readability much easier
+/**Using request-promise so I can use .then and .catch when querying APIs using request
+*Must Install request & request-promise modules in order for this to work
+*Not 100 % nessessary but it makes readability much easier
+*/
 const request = require("request-promise");
 const spotifyKeys = require("./keys.js");
 const Spotify = require("node-spotify-api")
@@ -73,7 +74,6 @@ const movieThis = function () {
     //Queries the OMDB API for the movie title that the user provided
     request(query)
         .then(response => {
-
             //Parsing the response object and assigning it to variables for readability
             const movieTitle = response.Title;
             const movieYear = response.Year;
