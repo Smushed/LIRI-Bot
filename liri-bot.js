@@ -30,7 +30,7 @@ for (let i = 3; i < input.length; i++) {
     if (i === 3) {
         combinedInput = input[i];
     } else {
-        combinedInput = combinedInput + ` ` + input[i];
+        combinedInput = `${combinedInput} ${input[i]}`;
     }
 };
 
