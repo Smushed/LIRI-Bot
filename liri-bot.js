@@ -69,7 +69,14 @@ const concertThis = function () {
                 console.log(`Date: ${bandDate}`);
                 console.log(`Venue: ${bandVenue}`);
                 console.log(`Location: ${venueLocation}`);
-            }
+
+                //Appending data to log.txt
+                fs.appendFile("log.txt", `---------------\n${liriCommand}\nLineup: ${lineup}\nDate: ${bandDate}\nVenue: ${bandVenue}\nLocation: ${venueLocation}\n`, err => {
+                    if (err) {
+                        return console.log(err);
+                    };
+                });
+            };
         }).catch(err => {
             console.log(err);
         });
@@ -94,6 +101,13 @@ const spotifyThisSong = function () {
             console.log(`Song Name: ${songName}`);
             console.log(`URL: ${spotifyURL}`);
             console.log(`Album: ${album}`);
+
+            //Appending data to log.txt
+            fs.appendFile("log.txt", `---------------\n${liriCommand}\nArtist: ${artist}\nSong Name: ${songName}\nURL: ${spotifyURL}\nAlbum: ${album}\n`, err => {
+                if (err) {
+                    return console.log(err);
+                };
+            });
         }).catch(err => {
             console.log(err);
         });
@@ -129,6 +143,13 @@ const movieThis = function () {
             console.log(`Language: ${movieLanguage}`);
             console.log(`Plot: ${moviePlot}`);
             console.log(`Actors: ${movieActors}`);
+
+            //Appending data to log.txt
+            fs.appendFile("log.txt", `---------------\n${liriCommand}\nTitle: ${movieTitle}\nYear: ${movieYear}\nIMDB Rating: ${IMDBRating}\nRotten Tomatoes Rating: ${RTRating}\nCountry Produced: ${movieCountry}\nLanguage: ${movieLanguage}\nPlot: ${moviePlot}\nActors: ${movieActors}\n`, err => {
+                if (err) {
+                    return console.log(err);
+                };
+            });
         })
         .catch(err => {
             console.log(err)

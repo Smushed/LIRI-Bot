@@ -1,0 +1,22 @@
+---------------
+spotify-this-song
+Artist: Ace of Base
+Song Name: The Sign
+URL: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album: The Sign (US Album) [Remastered]
+---------------
+movie-this
+Title: Rambo
+Year: 2008
+IMDB Rating: 7.0/10
+Rotten Tomatoes Rating: 37%
+Country Produced: Germany, USA
+Language: English, Burmese, Thai
+Plot: In Thailand, John Rambo joins a group of mercenaries to venture into war-torn Burma, and rescue a group of Christian aid workers who were kidnapped by the ruthless local infantry unit.
+Actors: Sylvester Stallone, Julie Benz, Matthew Marsden, Graham McTavish
+---------------
+concert-this
+Lineup: Tenacious D
+Date: 11/05/2018
+Venue: House Of Blues Boston
+Location: Boston, MA
