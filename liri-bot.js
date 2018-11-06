@@ -21,7 +21,7 @@ const spotify = new Spotify({
 });
 
 // Grabbing the user input from the command line
-let liriCommand = process.argv[2];
+let liriCommand = process.argv[2].toLowerCase();
 const input = process.argv
 //Combined input is if the user inputs spaces and it combines them in the for loop below
 let combinedInput = ``;
@@ -169,6 +169,10 @@ const doWhatItSays = function () {
     });
 };
 
+const getHelp = function () {
+    console.log(`\nAccepted commands and inputs are detailed below. Please use the following format for the program to return data as intended.\n\nSearch Spotify: spotify-this-song Song, Artist\nSearch Movie Database: movie-this Movie Title\nSearch Concerts: concert-this Artist\nImported Command: do-what-it-says  - Note this reads from random.txt in the format of command,input\n\nEvery search result will also be written to log.txt\nEnjoy!`)
+}
+
 //Wrapped in a function to easily incorporate doWhatItSays
 const decisionEngine = function () {
     switch (liriCommand) {
@@ -184,8 +188,11 @@ const decisionEngine = function () {
         case `do-what-it-says`:
             doWhatItSays();
             break;
+        case `liri-help`:
+            getHelp();
+            break;
         default:
-            console.log(`I don't understand`);
+            console.log(`I don't understand. Type "LIRI-Help" for options`);
     };
 };
 
