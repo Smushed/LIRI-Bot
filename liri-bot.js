@@ -12,6 +12,7 @@ const request = require(`request-promise`);
 const spotifyKeys = require(`./keys.js`);
 const Spotify = require(`node-spotify-api`);
 const moment = require(`moment`);
+const fs = require("fs");
 
 //config the Spotify API
 const spotify = new Spotify({
@@ -20,7 +21,7 @@ const spotify = new Spotify({
 });
 
 // Grabbing the user input from the command line
-const liriCommand = process.argv[2];
+let liriCommand = process.argv[2];
 const input = process.argv
 //Combined input is if the user inputs spaces and it combines them in the for loop below
 let combinedInput = ``;
@@ -132,22 +133,39 @@ const movieThis = function () {
         .catch(err => {
             console.log(err)
         });
-}
-
-switch (liriCommand) {
-    case `concert-this`:
-        concertThis();
-        break;
-    case `spotify-this-song`:
-        spotifyThisSong();
-        break;
-    case `movie-this`:
-        movieThis();
-        break;
-    case `do-what-it-says`:
-        doWhatItSays();
-        break;
-    default:
-        console.log(`I don't understand`);
 };
 
+const doWhatItSays = function () {
+    //Reads the random.txt file and inputs what it says
+    fs.readFile(`random.txt`, `utf8`, function (error, data) {
+        if (error) {
+            return console.log(error);
+        };
+        //The random.txt must be formatted command,input
+        liriCommand = data.split(`,`)[0];
+        combinedInput = data.split(`,`)[1];
+        decisionEngine();
+    });
+};
+
+//Wrapped in a function to easily incorporate doWhatItSays
+const decisionEngine = function () {
+    switch (liriCommand) {
+        case `concert-this`:
+            concertThis();
+            break;
+        case `spotify-this-song`:
+            spotifyThisSong();
+            break;
+        case `movie-this`:
+            movieThis();
+            break;
+        case `do-what-it-says`:
+            doWhatItSays();
+            break;
+        default:
+            console.log(`I don't understand`);
+    };
+};
+
+decisionEngine();
