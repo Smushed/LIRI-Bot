@@ -23,27 +23,32 @@ This allows the user to hit the Spotify API and return the song name, the artist
 To search the Spotify API input the command of <strong>spotify-this-song</strong>. This takes any input desired, but it will only return the first value from the request.<br />
 
 Below is a search for "Easy" by "Mat Zo"<br />
-![Easy, Mat Zo Spotify Search](./images/spotify-this-songSearch.png)<br />
+![Easy, Mat Zo Spotify Search](./images/spotify-this-songSearch.PNG)
+<br />
 
 Spotify search also has a default value of The Sign by Ace of Base<br />
-![Spotify Default Search](/images/spotify-this-songDefault.png)<br /><br />
+![Spotify Default Search](/images/spotify-this-songDefault.PNG)
+<br /><br />
 
 ### Bands In Town
 
 To search the Bands In Town API input the command of <strong>concert-this</strong>. The input for this command is any band or artist, but if the artist or input searched is not currently touring it will return a default value.<br />
 
 Below is a search for "Tenacious D"<br />
-![Tenacious D Concert Search](images/concert-thisSearch.png)<br />
+![Tenacious D Concert Search](images/concert-thisSearch.PNG)
+<br />
 
 ### OMDB
 
 To search the OMDB API input the command of <strong>movie-this</strong>. The input for this command should be any movie title.<br />
 
 Below is a search for "The Matrix"<br />
-![The Matrix Movie Search](images/movie-thisSearch.png)<br />
+![The Matrix Movie Search](images/movie-thisSearch.PNG)
+<br />
 
 As with Spotify, the OMDB search also has a default value. This time of Mr. Nobody<br />
-![OMDB Default Search](images/movie-thisDefault.png)<br />
+![OMDB Default Search](images/movie-thisDefault.PNG)
+<br />
 
 ### Do What It Says
 
@@ -52,22 +57,24 @@ The command of <strong>do-what-it-says</strong> reads the file random.txt and th
 Below is the default search within random.txt.<br />
 - This must be in the format of command,input<br />
 
-![Random.txt format](images/do-what-it-saysInput.png)<br />
+![Random.txt format](images/do-what-it-saysInput.PNG)
+<br />
 
 The current format of the random file is a Spotify request which brings the value of below<br />
-![Do What It Says Spotify Request](images/do-what-it-says.png)
+![Do What It Says Spotify Request](images/do-what-it-says.PNG)
 
 ### Help
 
 There is an imbedded help function within the LIRI bot. To access this enter LIRI-Help to the command line. This is to give the user simple instructions to use the program while within it. This will be shown if the user inputs anything other than the commands above.<br />
 
-![Help Log](images/helpFunction.png)
+![Help Log](images/helpFunction.PNG)
 
 ### Logs
 
 This bot keeps a log of every request which was requested by the user and their outputs. Every time a search is successfully made the program updates log.txt with the search and the values returned.<br />
 
-![Log](images/logtxt.png)<br /><br />
+![Log](images/logtxt.PNG)
+<br /><br />
 
 ### Notes
 

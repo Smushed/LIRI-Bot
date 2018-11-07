@@ -40,6 +40,7 @@ const concertThis = function () {
     if (combinedInput === ``) {
         combinedInput = `Kiss`;
     };
+    //Forms the API query string to send to bands in town
     const query = {
         uri: `https://rest.bandsintown.com/artists/${combinedInput}/events?app_id=codingbootcamp`,
         json: true
