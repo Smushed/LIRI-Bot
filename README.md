@@ -23,7 +23,7 @@ This allows the user to hit the Spotify API and return the song name, the artist
 To search the Spotify API input the command of <strong>spotify-this-song</strong>. This takes any input desired, but it will only return the first value from the request.<br />
 
 Below is a search for "Easy" by "Mat Zo"<br />
-![Easy, Mat Zo Spotify Search](images/spotify-this-songSearch.png)<br />
+![Easy, Mat Zo Spotify Search](./images/spotify-this-songSearch.png)<br />
 
 Spotify search also has a default value of The Sign by Ace of Base<br />
 ![Spotify Default Search](images/spotify-this-songDefault.png)<br /><br />
