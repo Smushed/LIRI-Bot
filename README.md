@@ -26,7 +26,7 @@ Below is a search for "Easy" by "Mat Zo"<br />
 ![Easy, Mat Zo Spotify Search](./images/spotify-this-songSearch.png)<br />
 
 Spotify search also has a default value of The Sign by Ace of Base<br />
-![Spotify Default Search](images/spotify-this-songDefault.png)<br /><br />
+![Spotify Default Search](/images/spotify-this-songDefault.png)<br /><br />
 
 ### Bands In Town
 
