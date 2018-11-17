@@ -78,4 +78,4 @@ This bot keeps a log of every request which was requested by the user and their 
 
 ### Notes
 
-I am happy with this assignment as this is my first entry into Node js. I could have made this program more robust with the requests. For example, trying to configure the Bands In Town API to only return data for your local area. However, I feel as if my time is best spent on future projects and enhancing my learning in other ways. I will probably not be returning to this in the future.
+I am happy with this assignment as this is my first entry into Node js. I could have made this program more robust with the requests. For example, trying to configure the Bands In Town API to only return data for your local area.
